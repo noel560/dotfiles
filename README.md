@@ -9,5 +9,17 @@ These are my dotfiles that I use
 ![Rofi](https://github.com/user-attachments/assets/d761304d-985f-4a43-b48f-df289faad0b8)
 
 ## Sddm:
+[Creator: Keyitdev](https://github.com/Keyitdev/sddm-astronaut-theme)
 (I'm too lazy to find out how to take a screenshot in sddm :p)
 ![SDDM](https://github.com/user-attachments/assets/fea3af83-f1ef-4468-ba5d-494f4452120e)
+
+### Requirements:
+- neofetch
+- neovim
+- rofi
+- zsh
+- ohmyzsh
+- sddm
+- qt6-svg
+- qt6-multimedia-ffmpeg
+- qt6-virtualkeyboard
