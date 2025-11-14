@@ -1,0 +1,9 @@
+#!/bin/sh
+exec > /tmp/xsetup-debug.log 2>&1
+set -x
+
+export DISPLAY=:0
+export XAUTHORITY=$(ls -t /run/sddm/xauth_* | head -n1)
+
+# Csak a főmonitor legyen bekapcsolva (DisplayPort-1), a második (HDMI-A-0) kikapcsolva
+xrandr --output HDMI-A-0 --off --output DisplayPort-1 --primary --auto

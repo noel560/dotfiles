@@ -1,0 +1,62 @@
+[env]
+TERM = "xterm-256color"
+
+[terminal.shell]
+program = "/usr/bin/zsh"
+args = ["-c", "neofetch; exec zsh"]
+
+[font]
+normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+bold = { family = "CaskaydiaMono Nerd Font", style = "Bold" }
+italic = { family = "CaskaydiaMono Nerd Font", style = "Italic" }
+size = 10
+
+[window]
+padding.x = 12
+padding.y = 12
+decorations = "None"
+opacity = 0.8
+
+[keyboard]
+bindings = [
+{ key = "Insert", mods = "Shift", action = "Paste" },
+{ key = "Insert", mods = "Control", action = "Copy" }
+]
+
+[colors]
+[colors.primary]
+background = "#121212"
+foreground = "#bebebe"
+dim_foreground = "#8a8a8d"
+
+[colors.cursor]
+text = "#121212"
+cursor = "#eaeaea"
+
+[colors.vi_mode_cursor]
+text = "#121212"
+cursor = "#eaeaea"
+
+[colors.selection]
+text = "CellForeground"
+background = "#333333"
+
+[colors.normal]
+black = "#0a0f0a"
+red = "#2e5f2e"
+green = "#35ff7b"
+yellow = "#6cffb3"
+blue = "#2aff9c"
+magenta = "#3cffc4"
+cyan = "#7dffea"
+white = "#c8ffe1"
+
+[colors.bright]
+black = "#1a241a"
+red = "#3f8f3f"
+green = "#4aff92"
+yellow = "#8dffcc"
+blue = "#4cffb1"
+magenta = "#66ffd8"
+cyan = "#b1fff3"
+white = "#e6fff4"
