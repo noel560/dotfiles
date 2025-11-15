@@ -1,0 +1,191 @@
+* {
+    font-family: "CaskaydiaMono Nerd Font", monospace;
+    font-size: 14px;
+    min-height: 0;
+}
+
+#waybar {
+    background: rgba(30, 30, 30, 0.95);
+    color: #8a8a8d;
+    margin: 5px;
+}
+
+/* Workspaces */
+#workspaces {
+    border-radius: 12px;
+    margin: 2px 2px;
+    background-color: transparent;
+}
+
+#workspaces button {
+    color: #5a5a5d;
+    border-radius: 25px;
+    padding: 0 0;
+    margin: 0 0;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    color: #8a8a8d;
+}
+
+#workspaces button.active {
+    color: #8a8a8d;
+}
+
+#workspaces button.urgent {
+    background: rgba(255, 0, 0, 0.3);
+    color: #ff6b6b;
+}
+
+/* Modules common styling */
+.module {
+    /* padding: 0px 12px;
+    margin: 2px 2px; */
+    padding: 0 0px;
+    margin: 0 10px;
+    /* background: rgba(40, 40, 40, 0.8); */
+}
+
+#custom-exit {
+    padding-right: 5px;
+}
+
+/* #pulseaudio {
+    padding: 0px 0px;
+}
+
+#custom-music {
+    padding-right: 10px;
+} */
+
+/* Left side modules */
+#custom-music,
+#tray {
+    border-radius: 12px;
+}
+
+/* Center modules */
+#clock {
+    border-radius: 12px;
+    color: #8a8a8d;
+}
+
+/* Right side modules with smooth transitions */
+#pulseaudio,
+#custom-brightness,
+#cpu,
+#network,
+#bluetooth,
+#battery,
+#custom-updates,
+#custom-hypridle,
+#custom-exit {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Specific module colors and styles */
+#pulseaudio {
+    color: #8a8a8d;
+}
+
+#pulseaudio.muted {
+    color: #8a8a8d;
+}
+
+#custom-brightness {
+    color: #8a8a8d;
+}
+
+#cpu {
+    color: #8a8a8d;
+}
+
+#cpu.high {
+    color: #8a8a8d;
+}
+
+#network {
+    color: #8a8a8d;
+}
+
+#network.disconnected {
+    color: #8a8a8d;
+}
+
+#bluetooth {
+    color: #8a8a8d;
+}
+
+#bluetooth.off {
+    color: #8a8a8d;
+}
+
+#battery {
+    color: #8a8a8d;
+}
+
+#battery.warning {
+    color: #8a8a8d;
+}
+
+#battery.critical {
+    color: #8a8a8d;
+}
+
+#battery.charging {
+    color: #8a8a8d;
+}
+
+#custom-updates {
+    color: #8a8a8d;
+}
+
+#custom-hypridle {
+    color: #8a8a8d;
+}
+
+#custom-hypridle.notactive {
+    color: #8a8a8d;
+}
+
+#custom-exit {
+    color: #8a8a8d;
+    margin-right: 8px;
+}
+
+#custom-music {
+    color: #8a8a8d;
+}
+
+/* Tray styling */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+/* Tooltip styling */
+tooltip {
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+}
+
+tooltip label {
+    color: #8a8a8d;
+    font-size: 12px;
+}
+
+/* Window title if you want to add it later */
+#window {
+    color: #8a8a8d;
+    padding: 0 16px;
+    border-radius: 12px;
+    background: rgba(40, 40, 40, 0.8);
+    margin: 4px 8px;
+}

@@ -123,3 +123,4 @@ export PATH="/home/noel/.cargo/bin:$PATH"
 
 alias please="sudo"
 alias plsupdate="sudo pacman -Syu"
+alias s="yay -Ss"

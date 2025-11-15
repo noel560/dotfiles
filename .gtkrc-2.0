@@ -2,8 +2,8 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/noel/.gtkrc-2.0.mine"
-gtk-theme-name="Adwaita-dark"
-gtk-icon-theme-name="Papirus"
+gtk-theme-name="Reversal-Dark"
+gtk-icon-theme-name="Reversal-black-dark"
 gtk-font-name="Adwaita Sans 11"
 gtk-cursor-theme-name="Bibata-Modern-Ice"
 gtk-cursor-theme-size=24
