@@ -42,6 +42,14 @@ install_requirements() {
     rm -rf wlogout
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+    # Install Powerlevel10k
+    if [ ! -d "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git \
+            "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k"
+    fi
+
+    cp -r .p10k.zsh ~/.p10k.zsh
 }
 
 install_dotfiles() {
@@ -69,8 +77,6 @@ install_dotfiles() {
     sudo cp -r usr/share/themes/* /usr/share/themes
 
     # zsh
-    mkdir -p ~/.oh-my-zsh
-    cp -r .oh-my-zsh/* ~/.oh-my-zsh
     cp .zshrc ~/.zshrc
 
     # SDDM theme
