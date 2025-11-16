@@ -34,6 +34,7 @@ if [ -f "$BASE/wallpaper.jpg" ]; then
     pkill -x mpvpaper 2>/dev/null
     swww img "$HOME/.config/wallpapers/current.jpg" --transition-type grow --transition-pos 0.854,0.977 --transition-step 90 --transition-fps 144
     wal -i "$HOME/.config/wallpapers/current.jpg"
+    cp ~/.config/wallpapers/current.jpg /var/lib/background
 fi
 
 # Wallpaper .2
@@ -44,6 +45,7 @@ if [ -f "$BASE/wallpaper.png" ]; then
     pkill -x mpvpaper 2>/dev/null
     swww img "$HOME/.config/wallpapers/current.png" --transition-type grow --transition-pos 0.854,0.977 --transition-step 90 --transition-fps 144
     wal -i "$HOME/.config/wallpapers/current.png"
+    cp ~/.config/wallpapers/current.png /var/lib/background
 fi
 
 # Wallpaper (Animated)
@@ -54,13 +56,17 @@ if [ -f "$BASE/wallpaper.mp4" ]; then
     pkill -x mpvpaper 2>/dev/null
     sleep 0.3
     wal -i "$HOME/.config/wallpapers/current.mp4"
+    cp ~/.config/wallpapers/current.mp4 /var/lib/background
     mpvpaper -o "loop-file mute" '*' "$HOME/.config/wallpapers/current.mp4" &
 fi
 
 # Reload
 hyprctl reload
 python3 "$(dirname "$0")/generate_btop.py"
+python3 "$(dirname "$0")/generate_rofi.py"
+python3 "$(dirname "$0")/generate_wlogout.py"
 pkill -USR2 btop
+swaync-client --reload-css
 #pkill -x mpvpaper 2>/dev/null
 
 #notify-send "Theme applied" "Theme: $THEME"

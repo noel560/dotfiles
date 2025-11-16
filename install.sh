@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#sh -c "$(curl -fsSL https://raw.githubusercontent.com/noel560/dotfiles/install.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/noel560/dotfiles/main/install.sh)"
 
 install_requirements() {
     sudo pacman -Syu --noconfirm
