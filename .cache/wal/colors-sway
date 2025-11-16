@@ -1,0 +1,21 @@
+set $wallpaper /home/noel/.config/wallpapers/current.jpg
+
+set $background #0a1218
+set $foreground #c1c3c5
+
+set $color0 #0a1218
+set $color1 #2C6B49
+set $color2 #4C6644
+set $color3 #108C58
+set $color4 #199B5F
+set $color5 #0BAD66
+set $color6 #51A55F
+set $color7 #c1c3c5
+set $color8 #59646d
+set $color9 #2C6B49
+set $color10 #4C6644
+set $color11 #108C58
+set $color12 #199B5F
+set $color13 #0BAD66
+set $color14 #51A55F
+set $color15 #c1c3c5

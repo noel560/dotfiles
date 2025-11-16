@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=sddm-noel
+Description=keyitdev sddm-astronaut-theme, modified for personal config.
+Author=noel
+License=GPL-3.0-or-later
+Type=sddm-theme
+Version=1.3
+ConfigFile=theme.conf
+MainScript=Main.qml
+TranslationsDirectory=translations
+Theme-Id=sddm-noel
+Theme-API=2.0
+QtVersion=6

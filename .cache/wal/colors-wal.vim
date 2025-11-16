@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/noel/.config/wallpapers/current.jpg"
+let background = "#0a1218"
+let foreground = "#c1c3c5"
+let cursor     = "#c1c3c5"
+
+" Colors
+let color0  = "#0a1218"
+let color1  = "#2C6B49"
+let color2  = "#4C6644"
+let color3  = "#108C58"
+let color4  = "#199B5F"
+let color5  = "#0BAD66"
+let color6  = "#51A55F"
+let color7  = "#c1c3c5"
+let color8  = "#59646d"
+let color9  = "#2C6B49"
+let color10 = "#4C6644"
+let color11 = "#108C58"
+let color12 = "#199B5F"
+let color13 = "#0BAD66"
+let color14 = "#51A55F"
+let color15 = "#c1c3c5"
