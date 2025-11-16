@@ -1,0 +1,28 @@
+{
+    "checksum": "b964e6cb18cc0c8e3af6f2a6bce59b87",
+    "wallpaper": "/home/noel/.config/wallpapers/current.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#121a1b",
+        "foreground": "#c3c5c6",
+        "cursor": "#c3c5c6"
+    },
+    "colors": {
+        "color0": "#121a1b",
+        "color1": "#3D6446",
+        "color2": "#4C4F4F",
+        "color3": "#616561",
+        "color4": "#8C6D67",
+        "color5": "#708A67",
+        "color6": "#878C78",
+        "color7": "#c3c5c6",
+        "color8": "#5c7171",
+        "color9": "#3D6446",
+        "color10": "#4C4F4F",
+        "color11": "#616561",
+        "color12": "#8C6D67",
+        "color13": "#708A67",
+        "color14": "#878C78",
+        "color15": "#c3c5c6"
+    }
+}

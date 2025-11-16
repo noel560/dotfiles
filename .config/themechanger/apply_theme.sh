@@ -56,8 +56,13 @@ if [ -f "$BASE/wallpaper.mp4" ]; then
     pkill -x mpvpaper 2>/dev/null
     sleep 0.3
     wal -i "$HOME/.config/wallpapers/current.mp4"
-    cp ~/.config/wallpapers/current.mp4 /var/lib/background
+    #cp ~/.config/wallpapers/current.mp4 /var/lib/background
     mpvpaper -o "loop-file mute" '*' "$HOME/.config/wallpapers/current.mp4" &
+fi
+
+# Animated Wallpaper Placeholder
+if [ -f "$BASE/0.png" ]; then
+    cp $BASE/0.png /var/lib/background
 fi
 
 # Reload
