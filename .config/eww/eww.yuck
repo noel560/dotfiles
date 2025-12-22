@@ -34,3 +34,16 @@
   :focusable false
   (mond_clock)
 )
+
+(defwindow clock2
+  :monitor 1
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "800px"
+                      :height "200px"
+                      :anchor "center")
+  :stacking "bottom"
+  :exclusive false
+  :focusable false
+  (mond_clock)
+)
