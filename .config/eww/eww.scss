@@ -1,0 +1,30 @@
+* {
+  all: unset;
+}
+
+.mond-container {
+  background-color: transparent; 
+  color: white;
+  padding: 20px;
+  // text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.mond-day {
+  font-family: "Anurati";
+  font-size: 90px;
+  letter-spacing: 15px; 
+}
+
+.mond-date {
+  font-family: "Quicksand"; 
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: -10px;
+}
+
+.mond-time {
+  font-family: "Quicksand";
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 700;
+}

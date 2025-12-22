@@ -32,7 +32,7 @@ install_requirements() {
     
     echo "Installing AUR packages..."
     yay -S --noconfirm neofetch python-pywal mpvpaper discord spotify \
-        spicetify-cli ttf-google-fonts-git hyprshade gtk2
+        spicetify-cli ttf-google-fonts-git hyprshade gtk2 eww
 
     if pacman -Q wlogout >/dev/null 2>&1; then
         yay -R --noconfirm wlogout
@@ -113,6 +113,11 @@ Current=sddm-noel" | sudo tee /etc/sddm.conf > /dev/null
     if [ -d "usr/share/sddm/scripts" ]; then
         sudo cp -r usr/share/sddm/scripts/* /usr/share/sddm/scripts
     fi
+
+    sudo cp fonts/* /usr/share/fonts/
+    fc-cache -fv
+
+    cp ~/.config/wallpapers/current.jpg /var/lib/background
 
     cd ..
     rm -rf dotfiles

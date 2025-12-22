@@ -1,0 +1,36 @@
+(defpoll time :interval "10s" "date '+%H:%M'")
+(defpoll day :interval "1h" "date '+%A' | tr '[:lower:]' '[:upper:]'")
+(defpoll date :interval "1h" "date '+%d %B, %Y.'")
+
+(defwidget mond_clock []
+  (box
+    :orientation "v"
+    :space-evenly false
+    :class "mond-container"
+    (label
+        :class "mond-day"
+        :text day
+    )
+    (label
+        :class "mond-date"
+        :text date
+    )
+    (label
+        :class "mond-time"
+        :text "- ${time} -"
+    )
+  )
+)
+
+(defwindow clock
+  :monitor 0
+  :geometry (geometry :x "0%"
+                      :y "0%"
+                      :width "800px"
+                      :height "200px"
+                      :anchor "center")
+  :stacking "bottom"
+  :exclusive false
+  :focusable false
+  (mond_clock)
+)
